@@ -1,5 +1,6 @@
 # Blackjack.py
 Information:
+- Play a game of blackjack against a computer
 - Typical deck of 52 cards, though with no suits
 - There are 4 cards of each rank
 - When a card is drawn from the deck, that card is removed from the list to ensure probabilities are correct (although the difference is insignificant)
