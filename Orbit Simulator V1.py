@@ -5,9 +5,9 @@ pygame.init() #initialize module
 ##Set up pygame window
 WIDTH, HEIGHT = 800, 800
 WIN = pygame.display.set_mode((WIDTH,HEIGHT)) #Game screen
-pygame.display.set_caption("Planet Simulation") #Title of game
+pygame.display.set_caption("Orbit Simulator V1") #Title of game
 
-font = pygame.font.SysFont("comicsans",16) #Font for text
+font = pygame.font.SysFont("Arial",20) #Font for text
 
 WHITE = (255,255,255) # Color code
 RED = (255, 0, 0)
