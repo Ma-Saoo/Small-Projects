@@ -40,3 +40,8 @@ Strategy :
   4. The prisoner repeats steps 2 and 3 until they find their own number, or fail because the number is not found in the first fifty opened drawers.
 
 Explanation : If every prisoner randomly guesses the draws, then the probability of a single prisoner finding their number is 50/100 = 1/2 = 50%. It follows that the probability of 100 prisoners all getting their numbers is (1/2)<sup>100</sup> = 7.88 * 10<sup>-29</sup> %. If we follow the strategy, the prisoners always wins if the longest cycle of numbers is 50. The probability that a random permutation of cycles having at most 50 numbers in any cycle is: 1 - (1/51 + 1/52 + ... + 1/99 + 1/100) ~ 0.3118 = 31.2%
+
+# Orbit Simulators
+A simulation of what would happen to our solar system if the Sun had disappeared. The simulation was constructed based on Newton's Law of Universal Gravitation. Consequently, the simulation is an approximation as, in reality, gravity is not a force propagated between bodies but rather the effect of curved spacetime. The model consists of the Sun, Mercury, Venus, Earth, and Mars. The outer system planets are not included as they orbit too far relative to the other four, which messes up the scale.
+
+The calculations for each planet took into account the gravitational pull of the other three planets and the Sun; however, as expected, the gravitational effects of the remaining planets are minimal relative to the Sun. Orbit Simulator V1 shows what would happen if the Sun disappeared instantaneously, whereas Orbit Simulator V2, after two seconds, has the Sun losing mass constantly until nil over fifteen seconds.
