@@ -50,14 +50,18 @@ The calculations for each planet took into account the gravitational pull of the
 A calculator to approximate prices of call and put options based on five variables: spot price, strike price, volatility, time to maturity, and risk-free rate. The Black-Scholes-Merton model used to price the options uses four assumptions that could lead to inaccuracy:
 
   1. Options can only be exercised at the expiration date.
+
      Only European options have this characteristic; thus, the BSM model cannot accurately price American options.
 
-  2. The risk-free interest rate and volatility remains constant until the maturity date.
+  3. The risk-free interest rate and volatility remains constant until the maturity date.
+
      In reality, the risk-free interest rate typically fluctuates throughout the duration of the contract. Volatility could vary due to changing market conditions.
 
-  3. Frictionless market, meaning no transaction costs.
+  5. Frictionless market, meaning no transaction costs.
+
      Most traders incur commission and/or brokerage fees when buying or selling options.
 
-  4. No dividends.
+  7. No dividends.
+
      Certain stocks distributes dividends at regular intervals.
      
