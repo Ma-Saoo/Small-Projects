@@ -45,3 +45,19 @@ Explanation : If every prisoner randomly guesses the draws, then the probability
 A simulation of what would happen to our solar system if the Sun had disappeared. The simulation was constructed based on Newton's Law of Universal Gravitation. Consequently, the simulation is an approximation as, in reality, gravity is not a force propagated between bodies but rather the effect of curved spacetime. The model consists of the Sun, Mercury, Venus, Earth, and Mars. The outer system planets are not included as they orbit too far relative to the other four, which messes up the scale.
 
 The calculations for each planet took into account the gravitational pull of the other three planets and the Sun; however, as expected, the gravitational effects of the remaining planets are minimal relative to the Sun. Orbit Simulator V1 shows what would happen if the Sun disappeared instantaneously (the event occurs twelve seconds after executing code), whereas Orbit Simulator V2, after two seconds, has the Sun losing mass constantly until nil over fifteen seconds.
+
+# Black-Scholes-Merton
+A calculator to approximate prices of call and put options based on five variables: spot price, strike price, volatility, time to maturity, and risk-free rate. The Black-Scholes-Merton model used to price the options uses four assumptions that could lead to inaccuracy:
+
+  1. Options can only be exercised at the expiration date.
+     Only European options have this characteristic; thus, the BSM model cannot accurately price American options.
+
+  2. The risk-free interest rate and volatility remains constant until the maturity date.
+     In reality, the risk-free interest rate typically fluctuates throughout the duration of the contract. Volatility could vary due to changing market conditions.
+
+  3. Frictionless market, meaning no transaction costs.
+     Most traders incur commission and/or brokerage fees when buying or selling options.
+
+  4. No dividends.
+     Certain stocks distributes dividends at regular intervals.
+     
