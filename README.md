@@ -64,4 +64,30 @@ A calculator to approximate prices of call and put options based on five variabl
   7. No dividends.
 
      Certain stocks distributes dividends at regular intervals.
+
+# Linear Regression on Stock Price
+
+Applied Linear Regression analysis on closing price of the stock of any publicly-traded companies listed in Yahoo Finance. Last two years of closing price is obtained from Yahoo Finance using the yfinance library. The linear regression model is trained exclusively on "Closing Price" and "Date", purposefully excluding "High" and "Low" to prevent potential data leakage. The incorporation of "High" and "Low" variables will introduce a bias that causes predictions to always fall within the boundaries set by these variables, thus resulting in an inflated and artificially high accuracy of the model.
+
+The value of a linear regression model's R<sup>2</sup> or Coefficient of Determination indicates the proportion of the variance in the closing price explained by the linear regression model. For example, an R<sup>2</sup> value of 0.63 implies that 63% of the variance in closing price is explained by the model. The following details an application of the model to widely traded stocks, showing their respective coefficients of determination (R-squared values):
+
+  1. S&P 500 
+
+     R<sup>2</sup> = 0.85 or 85%
+     
+  2. NVDA
+
+     R<sup>2</sup> = 0.83 or 83%
+
+  3. NASDAQ 100 
+
+     R<sup>2</sup> = 0.88 or 88%
+     
+  4. SMCI
+
+     R<sup>2</sup> = 0.74 or 74%
+     
+  5. LLY
+
+     R<sup>2</sup> = 0.91 or 91%
      
